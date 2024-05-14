@@ -7,7 +7,7 @@ import ExpenseTotal from './components/ExpenseTotal';
 import ExpenseList from './components/ExpenseList';
 import AllocationForm from './components/AllocationForm';
 import RemainingBudget from './components/Remaining';
-import CurrencyDropdown from './components/CurrencyDropdown';
+import Currency from './components/Currency';
 
 const App = () => {
     return (
