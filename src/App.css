@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+/* Styles for the CurrencyDropdown */
+.currency-dropdown {
+  background-color: green; /* Green background */
+  color: white; /* White text */
+  padding: 8px; /* Padding for some space inside the dropdown */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  outline: none; /* Remove focus outline */
+}
+
+.currency-dropdown:hover, .currency-dropdown:focus {
+  background-color: darkgreen; /* Darker green when hovered or focused */
+}
+
+.currency-dropdown option {
+  background-color: green; /* Green background in options */
+  color: white; /* White text for options */
+}

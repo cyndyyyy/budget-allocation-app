@@ -12,7 +12,6 @@ const CurrencyDropdown = () => {
   return (
     <div className="currency-container">
       <label htmlFor="currencyDropdown" className="currency-label">
-        Currency:
       </label>
       <select
         id="currencyDropdown"
@@ -20,10 +19,10 @@ const CurrencyDropdown = () => {
         onChange={(e) => handleCurrencyChange(e.target.value)}
         className="currency-dropdown"
       >
-        <option value="£">Pound (£)</option>
-        <option value="$">Dollar ($)</option>
-        <option value="€">Euro (€)</option>
-        <option value="₹">Rupee (₹)</option>
+        <option value="$">Currency ($ Dollar)</option>
+        <option value="£">Currency (£ Pound)</option>
+        <option value="€">Currency (€ Euro)</option>
+        <option value="₹">Currency (₹ Ruppee)</option>
       </select>
     </div>
   );
