@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { AppContext } from '../context/AppContext';
 import '../App.css'; // Import the CSS file
 
-const Currency = () => {
+const CurrencyDropdown = () => {
   const { currency, dispatch } = useContext(AppContext);
 
   const handleCurrencyChange = (newCurrency) => {
@@ -11,14 +11,14 @@ const Currency = () => {
 
   return (
     <div className="currency-container">
-      <label htmlFor="currency" className="currency-label">
-        Choose a currency:
+      <label htmlFor="currencyDropdown" className="currency-label">
+        Currency:
       </label>
       <select
-        id="currency"
+        id="currencyDropdown"
         value={currency}
         onChange={(e) => handleCurrencyChange(e.target.value)}
-        className="currency"
+        className="currency-dropdown"
       >
         <option value="£">Pound (£)</option>
         <option value="$">Dollar ($)</option>
@@ -29,4 +29,4 @@ const Currency = () => {
   );
 };
 
-export default Currency;
+export default CurrencyDropdown;
